@@ -77,7 +77,7 @@ bool BiMatch ( int u )
 		if ( !vis[ v ] )
 		{
 			vis[ v ] = true;
-			if ( match[ v ] == -1 || BiMatch ( v ) )
+			if ( match[ v ] == -1 || BiMatch ( match[ v ] ) )
 			{
 				match[ v ] = u;
 				return true;
